@@ -40,10 +40,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
       // Each tab has its own nav history stack:
 
-      .state('tab.calculator', {
-        url: '/calculator',
+      .state('tab.converter', {
+        url: '/converter',
         views: {
-          'tab-calculator': {
+          'tab-converter': {
             templateUrl: 'templates/converter.html',
             controller: 'ConverterController as ConverterCtrl'
           }
@@ -61,6 +61,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/calculator');
+    $urlRouterProvider.otherwise('/tab/converter');
 
   });
