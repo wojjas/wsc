@@ -2,9 +2,38 @@ angular.module('starter.controllers', [])
 
   .controller('ConverterController', function ($scope) {
     var vm = this;
+    var ms2knt = 1.9438444924574;
+    var knt2ms = 0.514444444;
 
-    vm.kts = 0;
-    vm.ms = 0;
+    vm.kts = null;
+    vm.ms = null;
+
+    vm.convert = convert;
+    vm.activate = activate;
+
+    activate();
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    function activate() {
+      vm.kts = 0;
+      vm.ms = 0;
+    }
+
+    function convert(inputField) {
+      switch (inputField) {
+        case 'ms':
+          var tmpKts = vm.ms * ms2knt;
+          vm.kts = Math.round(tmpKts * 10) / 10;
+          break;
+        case 'kts':
+          var tmpMs = vm.kts * knt2ms;
+          vm.ms = Math.round(tmpMs * 10) / 10;
+          break;
+        default:
+          break;
+      }
+    }
 
   })
 
@@ -16,11 +45,6 @@ angular.module('starter.controllers', [])
     //
     //$scope.$on('$ionicView.enter', function(e) {
     //});
-
-    $scope.chats = Chats.all();
-    $scope.remove = function (chat) {
-      Chats.remove(chat);
-    };
   })
 
   .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
