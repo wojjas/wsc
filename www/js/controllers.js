@@ -37,6 +37,20 @@ angular.module('starter.controllers', [])
 
   })
 
+  .directive('selectOnClick', ['$window', function ($window) {
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs) {
+        element.on('click', function () {
+          if (!$window.getSelection().toString()) {
+            // Required for mobile Safari
+            this.setSelectionRange(0, this.value.length)
+          }
+        });
+      }
+    };
+  }])
+
   .controller('AboutController', function ($scope, Chats) {
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.

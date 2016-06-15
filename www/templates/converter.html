@@ -5,6 +5,7 @@
       <label class="row item item-input">
         <span class="col col-30" style="border: none"></span>
         <input class="col col-20 col-offset-30" type="tel" maxlength="3" style="text-align: center"
+               select-on-click="true"
                ng-model="ConverterCtrl.ms"
                ng-change="ConverterCtrl.convert('ms')">
         <span class="col col-20 input-label" style="text-align: center">m/s</span>
@@ -13,6 +14,7 @@
       <label class="row item item-input">
         <span class="col col-30"></span>
         <input class="col col-20 col-offset-30" type="tel" maxlength="3" style="text-align: center"
+               select-on-click="true"
                ng-model="ConverterCtrl.kts"
                ng-change="ConverterCtrl.convert('kts')">
         <span class=" col col-20 input-label" style="text-align: center">kts</span>
