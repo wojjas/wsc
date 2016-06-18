@@ -31,22 +31,25 @@ angular.module('starter.controllers', [])
     function convert(inputField) {
       switch (inputField) {
         case 'mps':
-          vm.kts = getKts(vm.mps);
-          vm.bft = getBeaufort(vm.mps);
-          vm.mph = getMph(vm.mps);
-          vm.kph = getKph(vm.mps);
+          var tmpMps = stringToNumber(vm.mps);
+
+          vm.kts = getKts(tmpMps);
+          vm.bft = getBeaufort(tmpMps);
+          vm.mph = getMph(tmpMps);
+          vm.kph = getKph(tmpMps);
           break;
         case 'bft':
-          var tmpMps = getMpsFromBeaufort(vm.bft);
+          var tmpBft = stringToNumber(vm.bft);
+          var tmpMps = getMpsFromBeaufort(tmpBft);
 
           vm.mps = Math.round(tmpMps * 10) / 10;
-          //vm.bft = getBeaufort(tmpMps);
           vm.kts = getKts(tmpMps);
           vm.mph = getMph(tmpMps);
           vm.kph = getKph(tmpMps);
           break;
         case 'kts':
-          var tmpMps = vm.kts * knt2ms;
+          var tmpKts = stringToNumber(vm.kts);
+          var tmpMps = tmpKts * knt2ms;
 
           vm.mps = getMps(tmpMps);
           vm.bft = getBeaufort(tmpMps);
@@ -54,7 +57,8 @@ angular.module('starter.controllers', [])
           vm.kph = getKph(tmpMps);
           break;
         case 'kph':
-          var tmpMps = vm.kph / mps2kph;
+          var tmpKph = stringToNumber(vm.kph);
+          var tmpMps = tmpKph / mps2kph;
 
           vm.mps = getMps(tmpMps);
           vm.bft = getBeaufort(tmpMps);
@@ -62,7 +66,8 @@ angular.module('starter.controllers', [])
           vm.mph = getMph(tmpMps);
           break;
         case 'mph':
-          var tmpMps = vm.mph * mph2mps;
+          var tmpMph = stringToNumber(vm.mph);
+          var tmpMps = tmpMph * mph2mps;
 
           vm.mps = getMps(tmpMps);
           vm.bft = getBeaufort(tmpMps);
@@ -76,8 +81,6 @@ angular.module('starter.controllers', [])
 
     function getBeaufort(mps) {
       var retVal = null;
-
-      //TODO: try to parse mps to Number first.
 
       if (mps > 0 && mps < 0.3) {
         retVal = 0;
@@ -107,7 +110,9 @@ angular.module('starter.controllers', [])
         retVal = 12;
       } else {
         retVal = 0;
-        console.log('Calculation of Beaufort failed, given mps: ' + mps);
+        if (mps !== 0) {
+          console.log('Calculation of Beaufort failed, given mps: ' + mps);
+        }
       }
 
       return retVal;
@@ -115,8 +120,6 @@ angular.module('starter.controllers', [])
 
     function getMpsFromBeaufort(bft) {
       var retVal = null;
-
-      //TODO: try to parse bft to Number first, and Math.round it.
 
       var bftNumber = Math.round(bft);
 
@@ -176,6 +179,23 @@ angular.module('starter.controllers', [])
       }
 
       return retVal;
+    }
+
+    function stringToNumber(str) {
+      var retVal = null;
+
+      if (typeof(str) !== 'string') {
+        return 0;
+      }
+
+      str = str.replace(',', '.');
+      retVal = parseFloat(str);
+
+      if (!retVal) {
+        console.log('Invalid input value, please specify a number');
+      }
+
+      return retVal || 0;
     }
 
     function getMps(mps) {
