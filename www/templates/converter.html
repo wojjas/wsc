@@ -4,20 +4,47 @@
     <div class="list">
       <label class="row item item-input">
         <span class="col col-30" style="border: none"></span>
-        <input class="col col-20 col-offset-30" type="tel" maxlength="3" style="text-align: center"
+        <input class="col col-20 col-offset-30" type="tel" maxlength="4" style="text-align: center"
                select-on-click="true"
-               ng-model="ConverterCtrl.ms"
-               ng-change="ConverterCtrl.convert('ms')">
+               ng-model="ConverterCtrl.mps"
+               ng-change="ConverterCtrl.convert('mps')">
         <span class="col col-20 input-label" style="text-align: center">m/s</span>
         <span class="col col-30" style="border: none"></span>
       </label>
       <label class="row item item-input">
         <span class="col col-30"></span>
-        <input class="col col-20 col-offset-30" type="tel" maxlength="3" style="text-align: center"
+        <input class="col col-20 col-offset-30" type="tel" maxlength="4" style="text-align: center"
+               select-on-click="true"
+               ng-model="ConverterCtrl.bft"
+               ng-change="ConverterCtrl.convert('bft')">
+        <span class=" col col-20 input-label" style="text-align: center">bft</span>
+        <span class="col col-30"></span>
+      </label>
+      <label class="row item item-input">
+        <span class="col col-30"></span>
+        <input class="col col-20 col-offset-30" type="tel" maxlength="4" style="text-align: center"
                select-on-click="true"
                ng-model="ConverterCtrl.kts"
                ng-change="ConverterCtrl.convert('kts')">
         <span class=" col col-20 input-label" style="text-align: center">kts</span>
+        <span class="col col-30"></span>
+      </label>
+      <label class="row item item-input">
+        <span class="col col-30"></span>
+        <input class="col col-20 col-offset-30" type="tel" maxlength="4" style="text-align: center"
+               select-on-click="true"
+               ng-model="ConverterCtrl.kph"
+               ng-change="ConverterCtrl.convert('kph')">
+        <span class=" col col-20 input-label" style="text-align: center">km/h</span>
+        <span class="col col-30"></span>
+      </label>
+      <label class="row item item-input">
+        <span class="col col-30"></span>
+        <input class="col col-20 col-offset-30" type="tel" maxlength="4" style="text-align: center"
+               select-on-click="true"
+               ng-model="ConverterCtrl.mph"
+               ng-change="ConverterCtrl.convert('mph')">
+        <span class=" col col-20 input-label" style="text-align: center">mph</span>
         <span class="col col-30"></span>
       </label>
     </div>
