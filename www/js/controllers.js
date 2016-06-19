@@ -12,8 +12,24 @@ angular.module('starter.controllers', [])
     vm.kts = null;
     vm.kph = null;
     vm.mph = null;
+    vm.description = {  //http://planetcalc.com/384/
+      0: 'Calm',
+      1: 'Light air',
+      2: 'Light breeze',
+      3: 'Gentle breeze',
+      4: 'Breeze',
+      5: 'Fresh breeze',
+      6: 'Strong breeze',
+      7: 'Near gale',
+      8: 'Gale',
+      9: 'Strong gale',
+      10: 'Storm',
+      11: 'Voilent storm',
+      12: 'Huricane'
+    };
 
     vm.convert = convert;
+    vm.getDescription = getDescription;
     vm.activate = activate;
 
     activate();
@@ -179,6 +195,10 @@ angular.module('starter.controllers', [])
       }
 
       return retVal;
+    }
+
+    function getDescription() {
+      return vm.description[vm.bft];
     }
 
     function stringToNumber(str) {
