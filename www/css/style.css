@@ -1,1 +1,16 @@
 /* Empty. Add your own CSS if you like */
+
+input[type="tel"] {
+  font-size: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.font-size-l {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.font-size-xl {
+  font-size: 2em;
+}
