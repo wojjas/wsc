@@ -280,7 +280,68 @@ angular.module('starter.controllers', [])
     };
   }])
 
-  .controller('AboutController', function ($scope, Chats) {
+  .directive('clearingInput', [function () {
+    // Usage:
+    //  <clearing-input value="ClearingInputTestCtrl.someValue"></clearing-input>
+    //
+    return {
+      restrict: 'E',
+      templateUrl: 'templates/clearing_input.html',
+      controller: 'ClearingInputController as ClearingInputCtrl',
+      scope: {
+        externalValue: "=",
+        unit: "@",
+        convertFunction: "&"
+      },
+      bindToController: true
+    };
+  }])
+  .controller('ClearingInputController', ['$scope', '$timeout', function ($scope, $timeout) {
+    var vm = this;
+    var originalValue = null;
+
+    vm.value = null;                //value bound to the view, externalValue is the one bound to the model using this directive, via this directive's attribute (bound scope)
+
+    vm.onChange = onChange;
+    vm.onFocus = onFocus;
+    vm.onLeave = onLeave;
+    vm.activate = activate;
+
+    activate();
+
+    function activate() {
+      vm.value = vm.externalValue;
+    }
+
+    function onChange() {
+      vm.externalValue = vm.value;
+
+      $timeout(function () {
+        vm.convertFunction();
+      }, 0);
+    }
+
+    function onFocus() {
+      originalValue = vm.value;
+      vm.value = '';
+    }
+
+    function onLeave() {
+      if (!vm.value) {
+        vm.value = originalValue;
+      } else {
+        vm.externalValue = vm.value;
+      }
+    }
+
+    $scope.$watch(function () {
+      return vm.externalValue;
+    }, function (value) {
+      vm.value = value;
+    });
+  }])
+
+  .controller('AboutController', function ($scope) {
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
     // To listen for when this page is active (for example, to refresh data),
@@ -289,7 +350,10 @@ angular.module('starter.controllers', [])
     //$scope.$on('$ionicView.enter', function(e) {
     //});
   })
-
-  .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
-    $scope.chat = Chats.get($stateParams.chatId);
-  });
+// With the new view caching in Ionic, Controllers are only called
+// when they are recreated or on app start, instead of every page change.
+// To listen for when this page is active (for example, to refresh data),
+// listen for the $ionicView.enter event:
+//
+//$scope.$on('$ionicView.enter', function(e) {
+//});

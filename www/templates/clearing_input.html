@@ -1,0 +1,10 @@
+<label class="row item item-input">
+  <span class="col col-10" style="border: none"></span>
+  <input class="col col-40 col-offset-10 font-size-l" type="tel" maxlength="4" style="text-align: center"
+         ng-model="ClearingInputCtrl.value"
+         ng-change="ClearingInputCtrl.onChange()"
+         ng-focus="ClearingInputCtrl.onFocus()"
+         ng-blur="ClearingInputCtrl.onLeave()">
+  <span class="col col-40 input-label font-size-l" style="text-align: center">{{ClearingInputCtrl.unit}}</span>
+  <span class="col col-10" style="border: none"></span>
+</label>
