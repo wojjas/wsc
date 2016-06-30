@@ -38,6 +38,8 @@ angular.module('starter.controllers', [])
           vm.bft = getBeaufort(tmpMps);
           vm.mph = getMph(tmpMps);
           vm.kph = getKph(tmpMps);
+
+          BftScaleDescription.setCurrentSpeed(vm.bft);
           break;
         case 'bft':
           var tmpBft = stringToNumber(vm.bft);
@@ -47,6 +49,8 @@ angular.module('starter.controllers', [])
           vm.kts = getKts(tmpMps);
           vm.mph = getMph(tmpMps);
           vm.kph = getKph(tmpMps);
+
+          BftScaleDescription.setCurrentSpeed(vm.bft);
           break;
         case 'kts':
           var tmpKts = stringToNumber(vm.kts);
@@ -56,6 +60,8 @@ angular.module('starter.controllers', [])
           vm.bft = getBeaufort(tmpMps);
           vm.mph = getMph(tmpMps);
           vm.kph = getKph(tmpMps);
+
+          BftScaleDescription.setCurrentSpeed(vm.bft);
           break;
         case 'kph':
           var tmpKph = stringToNumber(vm.kph);
@@ -65,6 +71,8 @@ angular.module('starter.controllers', [])
           vm.bft = getBeaufort(tmpMps);
           vm.kts = getKts(tmpMps);
           vm.mph = getMph(tmpMps);
+
+          BftScaleDescription.setCurrentSpeed(vm.bft);
           break;
         case 'mph':
           var tmpMph = stringToNumber(vm.mph);
@@ -74,6 +82,8 @@ angular.module('starter.controllers', [])
           vm.bft = getBeaufort(tmpMps);
           vm.kts = getKts(tmpMps);
           vm.kph = getKph(tmpMps);
+
+          BftScaleDescription.setCurrentSpeed(vm.bft);
           break;
         default:
           break;
@@ -183,7 +193,7 @@ angular.module('starter.controllers', [])
     }
 
     function getDescription() {
-      return BftScaleDescription.getDescription()[vm.bft].label;
+      return BftScaleDescription.getDescription(vm.bft).label;
     }
 
     function stringToNumber(str) {
@@ -312,15 +322,19 @@ angular.module('starter.controllers', [])
     });
   }])
 
-  .controller('DescriptionController', ['BftScaleDescription', function ($scope, BftScaleDescription) {
-    //var vm = this;
-    //vm.activate = activate;
-    //
-    //activate();
-    //
-    //function activate(){
-    //  console.log('BftScaleDescription', BftScaleDescription);
-    //}
+  .controller('DescriptionController', ['$scope', 'BftScaleDescription', function ($scope, BftScaleDescription) {
+    var vm = this;
+
+    vm.description = null;
+    vm.activate = activate;
+
+    $scope.$on('$ionicView.enter', function (e) {
+      activate();
+    })
+
+    function activate() {
+      vm.description = BftScaleDescription.getDescriptionForCurrentSpeed();
+    }
   }])
 
 //NB for all controllers:
