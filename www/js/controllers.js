@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('ConverterController', function ($scope) {
+  .controller('ConverterController', ['$scope', 'BftScaleDescription', function ($scope, BftScaleDescription) {
     var vm = this;
     var mps2knt = 1.9438444924574;
     var knt2ms = 0.514444444;
@@ -12,21 +12,6 @@ angular.module('starter.controllers', [])
     vm.kts = null;
     vm.kph = null;
     vm.mph = null;
-    vm.description = {  //http://planetcalc.com/384/
-      0: 'Calm',
-      1: 'Light air',
-      2: 'Light breeze',
-      3: 'Gentle breeze',
-      4: 'Breeze',
-      5: 'Fresh breeze',
-      6: 'Strong breeze',
-      7: 'Near gale',
-      8: 'Gale',
-      9: 'Strong gale',
-      10: 'Storm',
-      11: 'Voilent storm',
-      12: 'Huricane'
-    };
 
     vm.convert = convert;
     vm.getDescription = getDescription;
@@ -198,7 +183,7 @@ angular.module('starter.controllers', [])
     }
 
     function getDescription() {
-      return vm.description[vm.bft];
+      return BftScaleDescription.getDescription()[vm.bft].label;
     }
 
     function stringToNumber(str) {
@@ -264,7 +249,7 @@ angular.module('starter.controllers', [])
 
       return retVal;
     }
-  })
+  }])
 
   .directive('clearingInput', [function () {
     // Usage:
@@ -327,15 +312,18 @@ angular.module('starter.controllers', [])
     });
   }])
 
-  .controller('AboutController', function ($scope) {
-    // With the new view caching in Ionic, Controllers are only called
-    // when they are recreated or on app start, instead of every page change.
-    // To listen for when this page is active (for example, to refresh data),
-    // listen for the $ionicView.enter event:
+  .controller('DescriptionController', ['BftScaleDescription', function ($scope, BftScaleDescription) {
+    //var vm = this;
+    //vm.activate = activate;
     //
-    //$scope.$on('$ionicView.enter', function(e) {
-    //});
-  })
+    //activate();
+    //
+    //function activate(){
+    //  console.log('BftScaleDescription', BftScaleDescription);
+    //}
+  }])
+
+//NB for all controllers:
 // With the new view caching in Ionic, Controllers are only called
 // when they are recreated or on app start, instead of every page change.
 // To listen for when this page is active (for example, to refresh data),
