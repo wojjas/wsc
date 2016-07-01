@@ -1,20 +1,20 @@
 <ion-view view-title="Description">
   <ion-content>
-    <div class="card">
+    <!--<div class="card">-->
       <div class="item item-text-wrap">
-        The wind speed currently specified is described by the Beaufort Scale as follows
+        The currently specified wind described according to the Beaufort Scale
       </div>
-    </div>
+    <!--</div>-->
 
     <div class="card">
-      <div class="item item-divider item-positive">"{{DescriptionCtrl.description.label}}" on Water <i
-        class="icon icon ion-help-buoy" style="font-size:1.2em; padding-left: 5px;"></i></div>
+      <div class="item item-divider item-positive">"{{DescriptionCtrl.description.label}}" on <strong>Water</strong>
+      </div>
       <div class="item item-text-wrap">{{DescriptionCtrl.description.onWater}}</div>
     </div>
 
     <div class="card">
-      <div class="item item-divider item-balanced">"{{DescriptionCtrl.description.label}}" on Land <i
-        class="icon icon ion-ios-home" style="font-size:1.2em; padding-left: 5px"></i></div>
+      <div class="item item-divider item-balanced">"{{DescriptionCtrl.description.label}}" on <strong>Land</strong>
+      </div>
       <div class="item item-text-wrap">{{DescriptionCtrl.description.onLand}}</div>
     </div>
   </ion-content>
