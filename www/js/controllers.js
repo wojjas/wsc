@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('wsc.controllers', [])
 
   .controller('ConverterController', ['$scope', 'BftScaleDescription', function ($scope, BftScaleDescription) {
     var vm = this;

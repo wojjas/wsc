@@ -2,7 +2,7 @@
  *
  */
 
-angular.module('starter.services', [])
+angular.module('wsc.services', [])
   .factory('BftScaleDescription', function () {
     var service = {
       getDescriptionForCurrentSpeed: getDescriptionForCurrentSpeed,
