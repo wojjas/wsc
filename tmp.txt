@@ -1,0 +1,326 @@
+No scripts found for hook "before_build".
+No scripts found for hook "before_prepare".
+Checking config.xml for saved platforms that haven't been added to the project
+Checking for any plugins added to the project that have not been installed in android platform
+No differences found between plugins added to project and installed in android platform. Continuing...
+Generating platform-specific config.xml from defaults for android at /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/res/xml/config.xml
+Merging project's config.xml into platform-specific android config.xml
+Merging and updating files from [www, platforms/android/platform_www] to platforms/android/assets/www
+  mkdir platforms/android/assets/www
+  copy  www/README.md platforms/android/assets/www/README.md (new file)
+  mkdir platforms/android/assets/www/cordova-js-src
+  mkdir platforms/android/assets/www/cordova-js-src/android
+  copy  platforms/android/platform_www/cordova-js-src/android/nativeapiprovider.js platforms/android/assets/www/cordova-js-src/android/nativeapiprovider.js (new file)
+  copy  platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js platforms/android/assets/www/cordova-js-src/android/promptbasednativeapi.js (new file)
+  copy  platforms/android/platform_www/cordova-js-src/exec.js platforms/android/assets/www/cordova-js-src/exec.js (new file)
+  copy  platforms/android/platform_www/cordova-js-src/platform.js platforms/android/assets/www/cordova-js-src/platform.js (new file)
+  mkdir platforms/android/assets/www/cordova-js-src/plugin
+  mkdir platforms/android/assets/www/cordova-js-src/plugin/android
+  copy  platforms/android/platform_www/cordova-js-src/plugin/android/app.js platforms/android/assets/www/cordova-js-src/plugin/android/app.js (new file)
+  copy  platforms/android/platform_www/cordova.js platforms/android/assets/www/cordova.js (new file)
+  copy  platforms/android/platform_www/cordova_plugins.js platforms/android/assets/www/cordova_plugins.js (new file)
+  mkdir platforms/android/assets/www/css
+  copy  www/css/style.css platforms/android/assets/www/css/style.css (new file)
+  mkdir platforms/android/assets/www/img
+  copy  www/img/ionic.png platforms/android/assets/www/img/ionic.png (new file)
+  copy  www/index.html platforms/android/assets/www/index.html (new file)
+  mkdir platforms/android/assets/www/js
+  copy  www/js/app.js platforms/android/assets/www/js/app.js (new file)
+  copy  www/js/controllers.js platforms/android/assets/www/js/controllers.js (new file)
+  copy  www/js/services.js platforms/android/assets/www/js/services.js (new file)
+  mkdir platforms/android/assets/www/lib
+  mkdir platforms/android/assets/www/lib/ionic
+  mkdir platforms/android/assets/www/lib/ionic/css
+  copy  www/lib/ionic/css/ionic.css platforms/android/assets/www/lib/ionic/css/ionic.css (new file)
+  copy  www/lib/ionic/css/ionic.min.css platforms/android/assets/www/lib/ionic/css/ionic.min.css (new file)
+  mkdir platforms/android/assets/www/lib/ionic/fonts
+  copy  www/lib/ionic/fonts/ionicons.eot platforms/android/assets/www/lib/ionic/fonts/ionicons.eot (new file)
+  copy  www/lib/ionic/fonts/ionicons.svg platforms/android/assets/www/lib/ionic/fonts/ionicons.svg (new file)
+  copy  www/lib/ionic/fonts/ionicons.ttf platforms/android/assets/www/lib/ionic/fonts/ionicons.ttf (new file)
+  copy  www/lib/ionic/fonts/ionicons.woff platforms/android/assets/www/lib/ionic/fonts/ionicons.woff (new file)
+  mkdir platforms/android/assets/www/lib/ionic/js
+  mkdir platforms/android/assets/www/lib/ionic/js/angular
+  mkdir platforms/android/assets/www/lib/ionic/js/angular-ui
+  copy  www/lib/ionic/js/angular-ui/angular-ui-router.js platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.js (new file)
+  copy  www/lib/ionic/js/angular-ui/angular-ui-router.min.js platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.min.js (new file)
+  copy  www/lib/ionic/js/angular/angular-animate.js platforms/android/assets/www/lib/ionic/js/angular/angular-animate.js (new file)
+  copy  www/lib/ionic/js/angular/angular-animate.min.js platforms/android/assets/www/lib/ionic/js/angular/angular-animate.min.js (new file)
+  copy  www/lib/ionic/js/angular/angular-resource.js platforms/android/assets/www/lib/ionic/js/angular/angular-resource.js (new file)
+  copy  www/lib/ionic/js/angular/angular-resource.min.js platforms/android/assets/www/lib/ionic/js/angular/angular-resource.min.js (new file)
+  copy  www/lib/ionic/js/angular/angular-sanitize.js platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.js (new file)
+  copy  www/lib/ionic/js/angular/angular-sanitize.min.js platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.min.js (new file)
+  copy  www/lib/ionic/js/angular/angular.js platforms/android/assets/www/lib/ionic/js/angular/angular.js (new file)
+  copy  www/lib/ionic/js/angular/angular.min.js platforms/android/assets/www/lib/ionic/js/angular/angular.min.js (new file)
+  copy  www/lib/ionic/js/ionic-angular.js platforms/android/assets/www/lib/ionic/js/ionic-angular.js (new file)
+  copy  www/lib/ionic/js/ionic-angular.min.js platforms/android/assets/www/lib/ionic/js/ionic-angular.min.js (new file)
+  copy  www/lib/ionic/js/ionic.bundle.js platforms/android/assets/www/lib/ionic/js/ionic.bundle.js (new file)
+  copy  www/lib/ionic/js/ionic.bundle.min.js platforms/android/assets/www/lib/ionic/js/ionic.bundle.min.js (new file)
+  copy  www/lib/ionic/js/ionic.js platforms/android/assets/www/lib/ionic/js/ionic.js (new file)
+  copy  www/lib/ionic/js/ionic.min.js platforms/android/assets/www/lib/ionic/js/ionic.min.js (new file)
+  mkdir platforms/android/assets/www/lib/ionic/scss
+  copy  www/lib/ionic/scss/_action-sheet.scss platforms/android/assets/www/lib/ionic/scss/_action-sheet.scss (new file)
+  copy  www/lib/ionic/scss/_animations.scss platforms/android/assets/www/lib/ionic/scss/_animations.scss (new file)
+  copy  www/lib/ionic/scss/_backdrop.scss platforms/android/assets/www/lib/ionic/scss/_backdrop.scss (new file)
+  copy  www/lib/ionic/scss/_badge.scss platforms/android/assets/www/lib/ionic/scss/_badge.scss (new file)
+  copy  www/lib/ionic/scss/_bar.scss platforms/android/assets/www/lib/ionic/scss/_bar.scss (new file)
+  copy  www/lib/ionic/scss/_button-bar.scss platforms/android/assets/www/lib/ionic/scss/_button-bar.scss (new file)
+  copy  www/lib/ionic/scss/_button.scss platforms/android/assets/www/lib/ionic/scss/_button.scss (new file)
+  copy  www/lib/ionic/scss/_checkbox.scss platforms/android/assets/www/lib/ionic/scss/_checkbox.scss (new file)
+  copy  www/lib/ionic/scss/_form.scss platforms/android/assets/www/lib/ionic/scss/_form.scss (new file)
+  copy  www/lib/ionic/scss/_grid.scss platforms/android/assets/www/lib/ionic/scss/_grid.scss (new file)
+  copy  www/lib/ionic/scss/_items.scss platforms/android/assets/www/lib/ionic/scss/_items.scss (new file)
+  copy  www/lib/ionic/scss/_list.scss platforms/android/assets/www/lib/ionic/scss/_list.scss (new file)
+  copy  www/lib/ionic/scss/_loading.scss platforms/android/assets/www/lib/ionic/scss/_loading.scss (new file)
+  copy  www/lib/ionic/scss/_menu.scss platforms/android/assets/www/lib/ionic/scss/_menu.scss (new file)
+  copy  www/lib/ionic/scss/_mixins.scss platforms/android/assets/www/lib/ionic/scss/_mixins.scss (new file)
+  copy  www/lib/ionic/scss/_modal.scss platforms/android/assets/www/lib/ionic/scss/_modal.scss (new file)
+  copy  www/lib/ionic/scss/_platform.scss platforms/android/assets/www/lib/ionic/scss/_platform.scss (new file)
+  copy  www/lib/ionic/scss/_popover.scss platforms/android/assets/www/lib/ionic/scss/_popover.scss (new file)
+  copy  www/lib/ionic/scss/_popup.scss platforms/android/assets/www/lib/ionic/scss/_popup.scss (new file)
+  copy  www/lib/ionic/scss/_progress.scss platforms/android/assets/www/lib/ionic/scss/_progress.scss (new file)
+  copy  www/lib/ionic/scss/_radio.scss platforms/android/assets/www/lib/ionic/scss/_radio.scss (new file)
+  copy  www/lib/ionic/scss/_range.scss platforms/android/assets/www/lib/ionic/scss/_range.scss (new file)
+  copy  www/lib/ionic/scss/_refresher.scss platforms/android/assets/www/lib/ionic/scss/_refresher.scss (new file)
+  copy  www/lib/ionic/scss/_reset.scss platforms/android/assets/www/lib/ionic/scss/_reset.scss (new file)
+  copy  www/lib/ionic/scss/_scaffolding.scss platforms/android/assets/www/lib/ionic/scss/_scaffolding.scss (new file)
+  copy  www/lib/ionic/scss/_select.scss platforms/android/assets/www/lib/ionic/scss/_select.scss (new file)
+  copy  www/lib/ionic/scss/_slide-box.scss platforms/android/assets/www/lib/ionic/scss/_slide-box.scss (new file)
+  copy  www/lib/ionic/scss/_slides.scss platforms/android/assets/www/lib/ionic/scss/_slides.scss (new file)
+  copy  www/lib/ionic/scss/_spinner.scss platforms/android/assets/www/lib/ionic/scss/_spinner.scss (new file)
+  copy  www/lib/ionic/scss/_tabs.scss platforms/android/assets/www/lib/ionic/scss/_tabs.scss (new file)
+  copy  www/lib/ionic/scss/_toggle.scss platforms/android/assets/www/lib/ionic/scss/_toggle.scss (new file)
+  copy  www/lib/ionic/scss/_transitions.scss platforms/android/assets/www/lib/ionic/scss/_transitions.scss (new file)
+  copy  www/lib/ionic/scss/_type.scss platforms/android/assets/www/lib/ionic/scss/_type.scss (new file)
+  copy  www/lib/ionic/scss/_util.scss platforms/android/assets/www/lib/ionic/scss/_util.scss (new file)
+  copy  www/lib/ionic/scss/_variables.scss platforms/android/assets/www/lib/ionic/scss/_variables.scss (new file)
+  copy  www/lib/ionic/scss/ionic.scss platforms/android/assets/www/lib/ionic/scss/ionic.scss (new file)
+  mkdir platforms/android/assets/www/lib/ionic/scss/ionicons
+  copy  www/lib/ionic/scss/ionicons/_ionicons-font.scss platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-font.scss (new file)
+  copy  www/lib/ionic/scss/ionicons/_ionicons-icons.scss platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-icons.scss (new file)
+  copy  www/lib/ionic/scss/ionicons/_ionicons-variables.scss platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-variables.scss (new file)
+  copy  www/lib/ionic/scss/ionicons/ionicons.scss platforms/android/assets/www/lib/ionic/scss/ionicons/ionicons.scss (new file)
+  copy  www/lib/ionic/version.json platforms/android/assets/www/lib/ionic/version.json (new file)
+  mkdir platforms/android/assets/www/plugins
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-device
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-device/www
+  copy  platforms/android/platform_www/plugins/cordova-plugin-device/www/device.js platforms/android/assets/www/plugins/cordova-plugin-device/www/device.js (new file)
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-splashscreen
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www
+  copy  platforms/android/platform_www/plugins/cordova-plugin-splashscreen/www/splashscreen.js platforms/android/assets/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js (new file)
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-statusbar
+  mkdir platforms/android/assets/www/plugins/cordova-plugin-statusbar/www
+  copy  platforms/android/platform_www/plugins/cordova-plugin-statusbar/www/statusbar.js platforms/android/assets/www/plugins/cordova-plugin-statusbar/www/statusbar.js (new file)
+  mkdir platforms/android/assets/www/plugins/ionic-plugin-keyboard
+  mkdir platforms/android/assets/www/plugins/ionic-plugin-keyboard/www
+  mkdir platforms/android/assets/www/plugins/ionic-plugin-keyboard/www/android
+  copy  platforms/android/platform_www/plugins/ionic-plugin-keyboard/www/android/keyboard.js platforms/android/assets/www/plugins/ionic-plugin-keyboard/www/android/keyboard.js (new file)
+  mkdir platforms/android/assets/www/templates
+  copy  www/templates/clearing_input.html platforms/android/assets/www/templates/clearing_input.html (new file)
+  copy  www/templates/converter.html platforms/android/assets/www/templates/converter.html (new file)
+  copy  www/templates/description.html platforms/android/assets/www/templates/description.html (new file)
+  copy  www/templates/tabs.html platforms/android/assets/www/templates/tabs.html (new file)
+Wrote out android application name "WindSpeedConverter" to /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/res/values/strings.xml
+android-versionCode not found in config.xml. Generating a code based on version in config.xml (0.0.1): 1
+Wrote out Android package name "se.proxoft.wsc" to /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/src/se/proxoft/wsc/MainActivity.java
+Updating icons at res
+  copy  resources/android/icon/drawable-hdpi-icon.png res/mipmap-hdpi/icon.png (new file)
+  copy  resources/android/icon/drawable-ldpi-icon.png res/mipmap-ldpi/icon.png (new file)
+  copy  resources/android/icon/drawable-mdpi-icon.png res/mipmap-mdpi/icon.png (new file)
+  copy  resources/android/icon/drawable-xhdpi-icon.png res/mipmap-xhdpi/icon.png (new file)
+  copy  resources/android/icon/drawable-xxhdpi-icon.png res/mipmap-xxhdpi/icon.png (new file)
+  copy  resources/android/icon/drawable-xxxhdpi-icon.png res/mipmap-xxxhdpi/icon.png (new file)
+Updating splash screens at res
+  copy  resources/android/splash/drawable-land-hdpi-screen.png res/drawable-land-hdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-land-ldpi-screen.png res/drawable-land-ldpi/screen.png (new file)
+  copy  resources/android/splash/drawable-land-mdpi-screen.png res/drawable-land-mdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-land-xhdpi-screen.png res/drawable-land-xhdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-land-xxhdpi-screen.png res/drawable-land-xxhdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-land-xxxhdpi-screen.png res/drawable-land-xxxhdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-hdpi-screen.png res/drawable-port-hdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-ldpi-screen.png res/drawable-port-ldpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-mdpi-screen.png res/drawable-port-mdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-xhdpi-screen.png res/drawable-port-xhdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-xxhdpi-screen.png res/drawable-port-xxhdpi/screen.png (new file)
+  copy  resources/android/splash/drawable-port-xxxhdpi-screen.png res/drawable-port-xxxhdpi/screen.png (new file)
+Prepared android project successfully
+Executing script found in hooks directory for hook "after_prepare": hooks/after_prepare/010_add_platform_class.js
+Running command: /Users/wojas/dev/proxoft/wsc/src/wsc/hooks/after_prepare/010_add_platform_class.js /Users/wojas/dev/proxoft/wsc/src/wsc
+add to body class: platform-android
+Command finished with error code 0: /Users/wojas/dev/proxoft/wsc/src/wsc/hooks/after_prepare/010_add_platform_class.js /Users/wojas/dev/proxoft/wsc/src/wsc
+Checking config.xml for saved plugins that haven't been added to the project
+No scripts found for hook "before_compile".
+ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+Subproject Path: CordovaLib
+Running command: /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/gradlew cdvBuildRelease -b /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build.gradle -Dorg.gradle.daemon=true -Dorg.gradle.jvmargs=-Xmx2048m -Pandroid.useDeprecatedNdk=true
+Incremental java compilation is an incubating feature.
+:preBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:checkReleaseManifest
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preReleaseBuild UP-TO-DATE
+:CordovaLib:checkReleaseManifest
+:CordovaLib:prepareReleaseDependencies
+:CordovaLib:compileReleaseAidl
+:CordovaLib:compileReleaseNdk UP-TO-DATE
+:CordovaLib:compileLint
+:CordovaLib:copyReleaseLint UP-TO-DATE
+:CordovaLib:mergeReleaseShaders
+:CordovaLib:compileReleaseShaders
+:CordovaLib:generateReleaseAssets
+:CordovaLib:mergeReleaseAssets
+:CordovaLib:mergeReleaseProguardFiles UP-TO-DATE
+:CordovaLib:packageReleaseRenderscript UP-TO-DATE
+:CordovaLib:compileReleaseRenderscript
+:CordovaLib:generateReleaseResValues
+:CordovaLib:generateReleaseResources
+:CordovaLib:packageReleaseResources
+:CordovaLib:processReleaseManifest
+:CordovaLib:generateReleaseBuildConfig
+:CordovaLib:processReleaseResources
+:CordovaLib:generateReleaseSources
+:CordovaLib:incrementalReleaseJavaCompilationSafeguard
+:CordovaLib:compileReleaseJavaWithJavac
+:CordovaLib:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:CordovaLib:processReleaseJavaRes UP-TO-DATE
+:CordovaLib:transformResourcesWithMergeJavaResForRelease
+:CordovaLib:transformClassesAndResourcesWithSyncLibJarsForRelease
+:CordovaLib:mergeReleaseJniLibFolders
+:CordovaLib:transformNative_libsWithMergeJniLibsForRelease
+:CordovaLib:transformNative_libsWithSyncJniLibsForRelease
+:CordovaLib:bundleRelease
+:prepareAndroidCordovaLibUnspecifiedReleaseLibrary
+:prepareReleaseDependencies
+:compileReleaseAidl
+:compileReleaseRenderscript
+:generateReleaseBuildConfig
+:generateReleaseResValues
+:generateReleaseResources
+:mergeReleaseResources
+:processReleaseManifest
+:processReleaseResources
+:generateReleaseSources
+:incrementalReleaseJavaCompilationSafeguard
+:compileReleaseJavaWithJavac
+:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:compileReleaseNdk UP-TO-DATE
+:compileReleaseSources
+:lintVitalRelease
+:mergeReleaseShaders
+:compileReleaseShaders
+:generateReleaseAssets
+:mergeReleaseAssets
+:transformClassesWithDexForRelease
+:mergeReleaseJniLibFolders
+:transformNative_libsWithMergeJniLibsForRelease
+:processReleaseJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForRelease
+:packageRelease
+:assembleRelease
+:cdvBuildRelease
+
+BUILD SUCCESSFUL
+
+Total time: 13.823 secs
+Command finished with error code 0: /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/gradlew cdvBuildRelease,-b,/Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build.gradle,-Dorg.gradle.daemon=true,-Dorg.gradle.jvmargs=-Xmx2048m,-Pandroid.useDeprecatedNdk=true
+Built the following apk(s): 
+	/Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build/outputs/apk/android-release-unsigned.apk
+No scripts found for hook "after_compile".
+No scripts found for hook "after_build".
+No scripts found for hook "before_build".
+No scripts found for hook "before_prepare".
+Checking config.xml for saved platforms that haven't been added to the project
+Checking for any plugins added to the project that have not been installed in android platform
+No differences found between plugins added to project and installed in android platform. Continuing...
+Generating platform-specific config.xml from defaults for android at /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/res/xml/config.xml
+Merging project's config.xml into platform-specific android config.xml
+Merging and updating files from [www, platforms/android/platform_www] to platforms/android/assets/www
+  copy  www/index.html platforms/android/assets/www/index.html (updated file)
+Wrote out android application name "WindSpeedConverter" to /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/res/values/strings.xml
+android-versionCode not found in config.xml. Generating a code based on version in config.xml (0.0.1): 1
+Wrote out Android package name "se.proxoft.wsc" to /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/src/se/proxoft/wsc/MainActivity.java
+Updating icons at res
+Updating splash screens at res
+Prepared android project successfully
+Executing script found in hooks directory for hook "after_prepare": hooks/after_prepare/010_add_platform_class.js
+Running command: /Users/wojas/dev/proxoft/wsc/src/wsc/hooks/after_prepare/010_add_platform_class.js /Users/wojas/dev/proxoft/wsc/src/wsc
+add to body class: platform-android
+Command finished with error code 0: /Users/wojas/dev/proxoft/wsc/src/wsc/hooks/after_prepare/010_add_platform_class.js /Users/wojas/dev/proxoft/wsc/src/wsc
+Checking config.xml for saved plugins that haven't been added to the project
+No scripts found for hook "before_compile".
+ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+Subproject Path: CordovaLib
+Running command: /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/gradlew cdvBuildRelease -b /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build.gradle -Dorg.gradle.daemon=true -Dorg.gradle.jvmargs=-Xmx2048m -Pandroid.useDeprecatedNdk=true
+Incremental java compilation is an incubating feature.
+:preBuild UP-TO-DATE
+:preReleaseBuild UP-TO-DATE
+:checkReleaseManifest
+:CordovaLib:preBuild UP-TO-DATE
+:CordovaLib:preReleaseBuild UP-TO-DATE
+:CordovaLib:checkReleaseManifest
+:CordovaLib:prepareReleaseDependencies
+:CordovaLib:compileReleaseAidl UP-TO-DATE
+:CordovaLib:compileReleaseNdk UP-TO-DATE
+:CordovaLib:compileLint UP-TO-DATE
+:CordovaLib:copyReleaseLint UP-TO-DATE
+:CordovaLib:mergeReleaseShaders UP-TO-DATE
+:CordovaLib:compileReleaseShaders UP-TO-DATE
+:CordovaLib:generateReleaseAssets UP-TO-DATE
+:CordovaLib:mergeReleaseAssets UP-TO-DATE
+:CordovaLib:mergeReleaseProguardFiles UP-TO-DATE
+:CordovaLib:packageReleaseRenderscript UP-TO-DATE
+:CordovaLib:compileReleaseRenderscript UP-TO-DATE
+:CordovaLib:generateReleaseResValues UP-TO-DATE
+:CordovaLib:generateReleaseResources UP-TO-DATE
+:CordovaLib:packageReleaseResources UP-TO-DATE
+:CordovaLib:processReleaseManifest UP-TO-DATE
+:CordovaLib:generateReleaseBuildConfig UP-TO-DATE
+:CordovaLib:processReleaseResources UP-TO-DATE
+:CordovaLib:generateReleaseSources UP-TO-DATE
+:CordovaLib:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:CordovaLib:compileReleaseJavaWithJavac UP-TO-DATE
+:CordovaLib:processReleaseJavaRes UP-TO-DATE
+:CordovaLib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:CordovaLib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:CordovaLib:mergeReleaseJniLibFolders UP-TO-DATE
+:CordovaLib:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:CordovaLib:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:CordovaLib:bundleRelease UP-TO-DATE
+:prepareAndroidCordovaLibUnspecifiedReleaseLibrary UP-TO-DATE
+:prepareReleaseDependencies
+:compileReleaseAidl UP-TO-DATE
+:compileReleaseRenderscript UP-TO-DATE
+:generateReleaseBuildConfig UP-TO-DATE
+:generateReleaseResValues UP-TO-DATE
+:generateReleaseResources UP-TO-DATE
+:mergeReleaseResources UP-TO-DATE
+:processReleaseManifest UP-TO-DATE
+:processReleaseResources UP-TO-DATE
+:generateReleaseSources UP-TO-DATE
+:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:compileReleaseJavaWithJavac UP-TO-DATE
+:compileReleaseNdk UP-TO-DATE
+:compileReleaseSources UP-TO-DATE
+:lintVitalRelease
+:mergeReleaseShaders UP-TO-DATE
+:compileReleaseShaders UP-TO-DATE
+:generateReleaseAssets UP-TO-DATE
+:mergeReleaseAssets UP-TO-DATE
+:transformClassesWithDexForRelease UP-TO-DATE
+:mergeReleaseJniLibFolders UP-TO-DATE
+:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:processReleaseJavaRes UP-TO-DATE
+:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:packageRelease UP-TO-DATE
+:assembleRelease
+:cdvBuildRelease
+
+BUILD SUCCESSFUL
+
+Total time: 1.818 secs
+Command finished with error code 0: /Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/gradlew cdvBuildRelease,-b,/Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build.gradle,-Dorg.gradle.daemon=true,-Dorg.gradle.jvmargs=-Xmx2048m,-Pandroid.useDeprecatedNdk=true
+Built the following apk(s): 
+	/Users/wojas/dev/proxoft/wsc/src/wsc/platforms/android/build/outputs/apk/android-release-unsigned.apk
+No scripts found for hook "after_compile".
+No scripts found for hook "after_build".
